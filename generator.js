@@ -54,3 +54,4 @@ while (price > priceLimit) {
     price = getstockFn.next().value;
     console.log("\u80A1\u7968\u7684\u4EF7\u683C" + price + "   +   " + getstockFn.next().done);
 }
+//ts中要跳过检查 不然报错

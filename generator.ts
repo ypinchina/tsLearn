@@ -8,7 +8,7 @@
 //   makeit.next()
 
   
-function* getStock(stockName) {
+function* getStock(stockName: String) {
   while(true) {
     yield Math.random()*100
   }
@@ -20,3 +20,4 @@ while (price > priceLimit) {
   price = getstockFn.next().value
   console.log(`股票的价格${price}   +   ${getstockFn.next().done}`)
 }
+//ts中要跳过检查 不然报错
